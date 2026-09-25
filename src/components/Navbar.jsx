@@ -31,7 +31,7 @@ export default function Navbar({ dark, onToggle }) {
         <ul className="hidden items-center gap-6 lg:flex">
           {links.map((id) => (
             <li key={id}>
-              <a href={`#${id}`} className={`text-sm font-medium transition hover:text-accent dark:hover:text-accent-dark ${active === id ? 'text-accent dark:text-accent-dark' : ''}`}>{label(id)}</a>
+              <a href={`#${id}`} className={`text-sm font-semibold transition hover:text-accent dark:hover:text-accent-dark ${active === id ? 'text-accent dark:text-accent-dark' : 'text-slate-800 dark:text-white'}`}>{label(id)}</a>
             </li>
           ))}
         </ul>
@@ -47,7 +47,7 @@ export default function Navbar({ dark, onToggle }) {
       {open && (
         <ul className="border-t border-slate-200 bg-slate-50 px-5 py-3 dark:border-slate-800 dark:bg-[#0a1118] lg:hidden">
           {links.map((id) => (
-            <li key={id}><a href={`#${id}`} onClick={() => setOpen(false)} className="block py-2 text-sm font-medium">{label(id)}</a></li>
+            <li key={id}><a href={`#${id}`} onClick={() => setOpen(false)} className="block py-2 text-sm font-semibold text-slate-800 hover:text-accent dark:text-white dark:hover:text-accent-dark">{label(id)}</a></li>
           ))}
         </ul>
       )}

@@ -8,7 +8,7 @@ export const profile = {
   resume: '/resume.pdf',
   phone: '9989566525',
   email: 'kadaliadityavivekavardhan@gmail.com',
-  location: 'Andhra Pradesh, India',
+  location: 'Pithanivari Peta, Vakatippa, Kapileswara puram Mandalam, East Godavari District, Andhra Pradesh - 533305',
   github: '',
   linkedin: 'https://www.linkedin.com/in/aditya-kadali-14870337b ',
   summary:
